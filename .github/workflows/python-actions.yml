@@ -29,7 +29,7 @@ jobs:
 
     - name: Print directories and files
       run: |
-        cat .test/matches
+        cat test/matches
         sudo apt-get install tree
         tree
         
