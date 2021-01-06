@@ -31,9 +31,10 @@ jobs:
       run: |
         sudo apt-get install tree
         tree
-        cat ./tests/matches
+        
     - name: Load and build docker image
       run: |
+        cat ./matches
         docker build -t aiarena -f .github/workflows/Dockerfile .
     - name: Collect Docker Logs
       uses: jwalton/gh-docker-logs@v2.0.0
