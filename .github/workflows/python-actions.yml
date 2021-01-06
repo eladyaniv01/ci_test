@@ -31,6 +31,7 @@ jobs:
       run: |
         sudo apt-get install tree
         tree
+        cat ./tests/matches
     - name: Load and build docker image
       run: |
         docker build -t aiarena -f .github/workflows/Dockerfile .
